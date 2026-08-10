@@ -561,7 +561,7 @@ watch([messages, category], () => { persistChatState() }, { deep: true })
 .chat-messages::-webkit-scrollbar {
   display: none;
 }
-/*AI辅助生成：通义灵码qwen3-coder，2026年4月14日
+/*
 .chat-messages {
   scrollbar-width: none;
   -ms-overflow-style: none;

@@ -43,7 +43,7 @@ export const authApi = {
   register: (data: { username: string; password: string; email?: string }) =>
     api.post('/auth/register', data)
 }
-//AI辅助生成，通义灵码qwen3-coder,VS Code插件,2026年4月14日20: 03
+
 export const consultationApi = {
   ask: (data: { question: string; category?: string; model?: string }) =>
     api.post('/consultation/ask', data),

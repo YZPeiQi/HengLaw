@@ -79,7 +79,7 @@ public class AiService {
             - modificationSuggestions: string（严格不超过80字）
             - summary: string（严格不超过80字）
             """;
-    //AI辅助生成，通义灵码qwen3-coder,VS Code插件,2026年4月14日18: 55
+    
     private static final String CONTRACT_REVIEW_ADVANCED_PROMPT = """
             【角色设定】
             你现在是一位经验丰富的合同审查律师，拥有10年以上合同法实务经验。你的任务是帮助我方审查以下合同，在尽可能保障我方核心利益的同时，促成交易的顺利达成。

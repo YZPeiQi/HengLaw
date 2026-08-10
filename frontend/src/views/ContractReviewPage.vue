@@ -249,7 +249,7 @@ const tipMessages = [
 ]
 
 // 核心计算逻辑：精准判断高低差，智能补齐留白
-/* AI辅助生成：通义灵码qwen3-coder，2026年4月14日 19：03 */
+
 const calculateHeights = async () => {
   if (!result.value || loading.value) return
 
