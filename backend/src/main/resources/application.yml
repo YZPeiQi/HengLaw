@@ -1,0 +1,47 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: lexai-backend
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/lexai_db?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:123456}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+
+# SiliconFlow API Configuration
+siliconflow:
+  api:
+    key: ${SILICONFLOW_API_KEY:sk-wlaztiqmhkildaudnkzfjjkuofexubekgjjzvrqprvaqviiu}
+    base-url: https://api.siliconflow.cn/v1
+  model: tencent/hunyuan-a13b-instruct
+
+# JWT Configuration
+jwt:
+  secret: ${JWT_SECRET:your-256-bit-secret-key-for-jwt-token-generation}
+  expiration: 86400000
+
+# Logging
+logging:
+  level:
+    com.lexai: DEBUG
+    org.springframework.security: INFO
+
+template:
+  search:
+    root-dir: ${TEMPLATE_SEARCH_ROOT:../合同协议模板}
+    max-results: 100000
+  preview:
+    soffice-path: ${SOFFICE_PATH:C:/Program Files/LibreOffice/program/soffice.exe}
+    convert-timeout-seconds: ${TEMPLATE_CONVERT_TIMEOUT_SECONDS:45}

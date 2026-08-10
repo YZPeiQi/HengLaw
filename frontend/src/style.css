@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #b58d45;
+  --primary-strong: #8f6b2f;
+  --success-color: #1f9f75;
+  --warning-color: #d88a2b;
+  --error-color: #b63c3c;
+  --text-color: #1d2632;
+  --text-secondary: #516074;
+  --border-color: #d8dee6;
+  --bg-color: #f1f3f6;
+  --surface-color: #ffffff;
+  --deep-navy: #08192c;
+  --deep-navy-soft: #12293f;
+  --gold-fade: rgba(181, 141, 69, 0.18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  color: #eef4fc;
+  background: #061526;
+  line-height: 1.6;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-strong);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 全局流光按钮特效 */
+.btn-glow {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(90deg, #ba9654, #d7bc86, #ba9654);
+  background-size: 200% auto;
+  color: #1a1f29;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  font-weight: 700;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.btn-glow:hover {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(186, 150, 84, 0.4);
+}
+
+.btn-glow::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+  transform: rotate(30deg) translateY(-50%) translateX(-150%);
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  z-index: 1;
+}
+
+.btn-glow:hover::after {
+  transform: rotate(30deg) translateY(-50%) translateX(150%);
+}
+
+input, textarea, select {
+  font-family: inherit;
+}

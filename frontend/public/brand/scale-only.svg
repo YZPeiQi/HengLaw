@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="LawIntelEmpower scale logo">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4deb0"/>
+      <stop offset="100%" stop-color="#b99252"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 20h28" stroke-width="3.2"/>
+    <path d="M32 12v34" stroke-width="3.2"/>
+    <path d="M24 20l-6 12" stroke-width="2.4"/>
+    <path d="M40 20l6 12" stroke-width="2.4"/>
+    <path d="M13 33c1.8 4.2 5.1 6.3 9 6.3s7.2-2.1 9-6.3H13z" stroke-width="2"/>
+    <path d="M33 33c1.8 4.2 5.1 6.3 9 6.3s7.2-2.1 9-6.3H33z" stroke-width="2"/>
+    <path d="M26 49h12" stroke-width="3.2"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "host": "localhost",
+  "port": "3306",
+  "user": "root",
+  "folder": "D:/ocr/J/去重",
+  "database": "demo001",
+  "case_type": "刑事案件"
+}
