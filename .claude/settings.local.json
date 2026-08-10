@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d D:/VSCODE/**)",
+      "Bash(python -c \"from PIL import Image; print\\('PIL available'\\)\")",
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(git -C \"D:/VSCODE/HengLaw\" show HEAD:README.md)"
+    ]
+  }
+}
