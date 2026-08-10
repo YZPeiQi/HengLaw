@@ -1,67 +1,133 @@
 # LexAI 智慧法律智能体平台
 
-<div align="center">
+<p align="center">
+  <img src="frontend/public/brand/logo-original-transparent.png" width="120" alt="LexAI Logo" />
+</p>
 
-**基于 Spring Boot + Vue 3 + MySQL 的法律 AI 助手平台**，接入腾讯混元大模型（Hunyuan-A13B-Instruct），提供法律咨询、案件分析、合同审查、法律文书生成、合同协议模板检索等功能。
+<p align="center">
+  <strong>接入腾讯混元大模型的法律 AI 助手平台</strong><br>
+  法律咨询 · 案件分析 · 合同审查 · 文书生成 · 模板检索
+</p>
 
-[![Spring Boot 3.2](https://img.shields.io/badge/Spring%20Boot-3.2-6DB33F?style=flat-square&logo=springboot)](https://spring.io/projects/spring-boot)
-[![Vue 3](https://img.shields.io/badge/Vue%203-4.x-42B883?style=flat-square&logo=vuedotjs)](https://vuejs.org/)
-[![MySQL 8.0](https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat-square&logo=mysql)](https://www.mysql.com/)
-[![JDK 17](https://img.shields.io/badge/JDK-17-FF6C2C?style=flat-square&logo=openjdk)](https://adoptium.net/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-6.x-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-8250DF?style=flat-square)](LICENSE)
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Spring%20Boot-3.2-6DB33F?style=flat-square&logo=springboot"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Vue%203-4.x-42B883?style=flat-square&logo=vuedotjs"></a>
+  <a href="#"><img src="https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat-square&logo=mysql"></a>
+  <a href="#"><img src="https://img.shields.io/badge/JDK-17-FF6C2C?style=flat-square&logo=openjdk"></a>
+  <a href="#"><img src="https://img.shields.io/badge/TypeScript-6.x-3178C6?style=flat-square&logo=typescript"></a>
+  <a href="#"><img src="https://img.shields.io/badge/License-MIT-8250DF?style=flat-square"></a>
+</p>
+
+---
+
+## 平台概览
+
+LexAI 是一款专为个人用户及小微企业打造的**一站式法律 AI 平台**，基于 Spring Boot + Vue 3 + MySQL 架构，接入**腾讯混元大模型（Hunyuan-A13B-Instruct）**，为用户提供专业、便捷、免费的法律服务。
+
+---
+
+## 功能模块
+
+### 智慧法律咨询
+<div class="feature-card">
+
+用户通过自然语言描述法律问题，AI 快速理解并给出专业解答。系统覆盖婚姻家庭、继承纠纷、合同纠纷、劳动争议、交通事故、房屋租赁等**多个法律分类**，7×24 小时随时响应，无需预约排队。
+
+</div>
+
+### 案件智能分析
+<div class="feature-card">
+
+提交案件事实描述后，AI 自动完成案件类型识别、诉讼策略建议、证据清单梳理、风险点评估与法律依据援引，帮助用户快速把握案件全貌，降低委托律师前的信息门槛。
+
+</div>
+
+### 合同智能审查
+<div class="feature-card">
+
+上传合同文件（支持 PDF/Word），AI 依据合同类型自动匹配审查规则。支持**基础审查**（快速风险点识别）与**高级审查**（律师级逐条分析）两种模式，涵盖劳动合同、租赁合同、买卖合同、借款合同、服务合同、技术合同、投资合同等类型。
+
+</div>
+
+### 法律文书生成
+<div class="feature-card">
+
+根据用户输入的案件信息与诉求，AI 自动生成标准法律文书，包括起诉状、答辩状、上诉状、财产保全申请书、强制执行申请书等，省去繁琐的格式排版，直接可用于立案。
+
+</div>
+
+### 合同协议模板库
+<div class="feature-card">
+
+内置本地合同协议模板库，支持关键词全文检索与分类浏览。用户可快速找到与自身需求最匹配的模板，并支持在线预览与下载，大幅降低合同起草的初试成本。
 
 </div>
 
 ---
 
-## ✨ 功能模块
+## 平台截图
 
-| 模块 | 说明 |
-| --- | --- |
-| ⚖️ **法律智能咨询** | AI 问答，支持婚姻家庭、合同纠纷、劳动争议等多个法律分类 |
-| 📂 **案件分析** | 用户提交案件描述，AI 自动分析案件类型、诉讼策略与风险点 |
-| 📋 **合同审查** | 上传合同文件，基础审查（快速风险点识别）或高级审查（律师级逐条分析） |
-| 📄 **法律文书生成** | AI 生成起诉状、答辩状、上诉状等标准法律文书 |
-| 📚 **合同协议模板库** | 本地文件系统全文检索，支持关键词搜索、分类浏览和 PDF 预览 |
+<div align="center">
+
+### 首页
+<img src="frontend/public/brand/1.png" width="90%" alt="首页" />
+
+### 法律咨询
+<img src="frontend/public/brand/2.png" width="90%" alt="法律咨询" />
+
+### 案件分析
+<img src="frontend/public/brand/3.png" width="90%" alt="案件分析" />
+
+### 合同模板库
+<img src="frontend/public/brand/4.png" width="90%" alt="合同模板库" />
+
+### 合同审查
+<img src="frontend/public/brand/5.png" width="90%" alt="合同审查" />
+
+### 文书生成
+<img src="frontend/public/brand/6.png" width="90%" alt="文书生成" />
+
+</div>
 
 ---
 
-## 🏗️ 技术架构
+## 技术架构
 
 ```
-┌──────────────────────────────────────────────────────┐
-│                    用户浏览器                          │
-│                http://localhost:3000                  │
-└─────────────────────┬────────────────────────────────┘
-                      │ HTTP
-                      ▼
-┌──────────────────────────────────────────────────────┐
-│            Vite Dev Server（前端）                    │
-│        localhost:3000 → Proxy /api/*                 │
-└─────────────────────┬────────────────────────────────┘
-                      │ /api → :8089
-                      ▼
-┌──────────────────────────────────────────────────────┐
-│           Spring Boot（后端） localhost:8089           │
-│  ┌──────────────────────────────────────────────┐   │
-│  │  Controllers → Services → Repositories       │   │
-│  │  Security（JWT Filter）                        │   │
-│  │  AiService（SiliconFlow AI 统一调度）          │   │
-│  └──────────────────────────────────────────────┘   │
-│          ↓                              ↓              │
-│  ┌──────────────┐        ┌──────────────────────┐    │
-│  │  MySQL :3306  │        │ SiliconFlow API（外网）│    │
-│  │   lexai_db    │        │  腾讯混元 a13b 模型    │    │
-│  └──────────────┘        └──────────────────────┘    │
-└──────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────┐
+│                     用户浏览器                             │
+│                 http://localhost:3000                    │
+└──────────────────────────┬──────────────────────────────┘
+                           │ HTTP
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│              Vite Dev Server（前端）                     │
+│          localhost:3000 → Proxy /api/*                 │
+└──────────────────────────┬──────────────────────────────┘
+                           │ /api → :8089
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│             Spring Boot（后端） localhost:8089            │
+│  ┌─────────────────────────────────────────────────┐    │
+│  │  Controllers → Services → Repositories           │    │
+│  │  Security（JWT Filter）                          │    │
+│  │  AiService（SiliconFlow AI 统一调度）            │    │
+│  └─────────────────────────────────────────────────┘    │
+│              ↓                        ↓                  │
+│  ┌───────────────┐       ┌────────────────────────┐     │
+│  │  MySQL :3306  │       │ SiliconFlow API（外网）│     │
+│  │    lexai_db   │       │  腾讯混元 a13b 模型    │     │
+│  └───────────────┘       └────────────────────────┘     │
+└─────────────────────────────────────────────────────────┘
 ```
+
+### 技术栈
 
 | 层级 | 技术选型 |
-| --- | --- |
+|------|----------|
 | **前端框架** | Vue 3.4 + TypeScript 6.0 + Vite 5.0 |
-| **前端状态** | Pinia 2.1（认证状态管理） |
-| **前端路由** | Vue Router 4.2 |
+| **前端状态** | Pinia 2.1（JWT 认证状态管理） |
+| **前端路由** | Vue Router 4.2（路由守卫） |
 | **HTTP 客户端** | Axios 1.6（统一拦截器，自动注入 JWT） |
 | **后端框架** | Spring Boot 3.2 + Java 17 |
 | **安全框架** | Spring Security + JWT（jjwt 0.12.3） |
@@ -72,7 +138,7 @@
 
 ---
 
-## 🚀 快速开始
+## 快速开始
 
 ### 环境要求
 
@@ -91,7 +157,7 @@ mysql -u root -p < database/schema.sql
 ```bash
 cd backend
 
-# 方式一：设置环境变量
+# 设置环境变量
 export SILICONFLOW_API_KEY=your-api-key
 export JWT_SECRET=your-256-bit-secret
 
@@ -99,7 +165,7 @@ export JWT_SECRET=your-256-bit-secret
 mvn spring-boot:run
 ```
 
-> 也可直接修改 `backend/src/main/resources/application.yml` 中的默认值。
+> 也可直接修改 `backend/src/main/resources/application.yml` 中的默认配置。
 
 ### 3. 前端启动
 
@@ -109,81 +175,71 @@ npm install
 npm run dev
 ```
 
-### 4. 访问地址
+### 4. 访问服务
 
 | 服务 | 地址 |
-| --- | --- |
-| 🌐 **前端页面** | http://localhost:3000 |
-| 🔌 **后端 API** | http://localhost:8089 |
-| 📖 **Swagger 文档** | http://localhost:8089/swagger-ui.html |
+|------|------|
+| 前端页面 | http://localhost:3000 |
+| 后端 API | http://localhost:8089 |
+| Swagger 文档 | http://localhost:8089/swagger-ui.html |
 
-> 首次使用请访问注册页面（http://localhost:3000/register）创建账号。
+> 首次使用请访问 http://localhost:3000/register 注册账号。
 
 ---
 
-## 📂 项目结构
+## 项目结构
 
 ```
 lexai/
-├── backend/                              # Spring Boot 后端
+├── backend/                          # Spring Boot 后端
 │   └── src/main/java/com/lexai/
-│       ├── config/                       # 配置类（CORS、Security、Swagger、SiliconFlow）
-│       ├── controller/                   # 控制器层
-│       │   ├── AuthController            # 认证（注册/登录）
-│       │   ├── ConsultationController    # 法律咨询
-│       │   ├── CaseController            # 案件分析
-│       │   ├── ContractController        # 合同审查
-│       │   ├── DocumentController        # 文书生成
-│       │   └── TemplateSearchController  # 模板检索
-│       ├── service/                      # 业务逻辑层
-│       │   └── AiService                  # AI 调度中心（统一封装 SiliconFlow 调用）
-│       ├── repository/                   # JPA 数据访问层
-│       ├── entity/                       # 实体类（User, Consultation, Case, Contract, Document, CaseLibrary）
-│       ├── dto/                          # 数据传输对象
-│       ├── security/                     # JWT 认证（Filter / TokenProvider / UserDetailsService）
-│       └── common/                       # 通用响应封装
+│       ├── config/                   # CORS / Security / Swagger / SiliconFlow 配置
+│       ├── controller/               # 控制器层
+│       │   ├── AuthController        # 认证（注册 / 登录）
+│       │   ├── ConsultationController # 法律咨询
+│       │   ├── CaseController         # 案件分析
+│       │   ├── ContractController     # 合同审查
+│       │   ├── DocumentController     # 文书生成
+│       │   └── TemplateSearchController # 模板检索
+│       ├── service/                  # 业务逻辑层
+│       │   └── AiService              # AI 调度中心（统一封装 SiliconFlow 调用）
+│       ├── repository/               # JPA 数据访问层
+│       ├── entity/                   # 实体类
+│       ├── dto/                      # 数据传输对象
+│       ├── security/                 # JWT 认证
+│       └── common/                   # 通用响应封装
 │
-├── frontend/                             # Vue 3 前端
+├── frontend/                         # Vue 3 前端
 │   └── src/
-│       ├── views/                        # 页面组件（9个业务页面）
-│       ├── components/                   # 公共组件（TopNavBar、PageHeader、AppLayout 等）
-│       ├── stores/                       # Pinia 状态（auth.ts：JWT 认证状态）
-│       ├── router/                       # Vue Router（JWT 路由守卫）
-│       └── api/                         # Axios 封装（自动注入 Authorization 头）
+│       ├── views/                    # 页面组件
+│       ├── components/              # 公共组件
+│       ├── stores/                   # Pinia 状态
+│       ├── router/                  # 路由配置
+│       └── api/                     # Axios 封装
 │
 └── database/
-    └── schema.sql                        # 数据库建表脚本（JPA 也会自动建表）
+    └── schema.sql                    # 数据库建表脚本
 ```
 
 ---
 
-## 🔐 API 认证
+## AI 能力
 
-- **公开接口**：认证接口 `/api/auth/**`、模板接口 `/api/template/**` 无需认证
-- **受保护接口**：其余所有接口需在请求头携带 `Authorization: Bearer <token>`
-- JWT Token 登录成功后返回，存储在 localStorage，Axios 拦截器自动注入
+AiService 作为系统的 AI 调度中心，统一封装 SiliconFlow API 调用，覆盖以下核心能力：
 
----
-
-## 🤖 AI 能力中心
-
-`AiService` 是系统的 AI 调度中心，所有 AI 能力（法律咨询、案件分析、合同审查、文书生成）统一经由它调用 SiliconFlow API。
-
-**合同审查**支持按合同类型选择专属 Prompt：
-
-| 合同类型 | 支持模式 |
-| --- | --- |
-| 劳动合同 | 基础审查 / 高级审查（律师级） |
-| 租赁合同 | 基础审查 / 高级审查（律师级） |
-| 买卖合同 | 基础审查 / 高级审查（律师级） |
-| 借款合同 | 基础审查 / 高级审查（律师级） |
-| 服务合同 | 基础审查 / 高级审查（律师级） |
-| 技术合同 | 基础审查 / 高级审查（律师级） |
-| 投资合同 | 基础审查 / 高级审查（律师级） |
+| 合同类型 | 基础审查 | 高级审查 |
+|----------|---------|---------|
+| 劳动合同 | ✓ | ✓ |
+| 租赁合同 | ✓ | ✓ |
+| 买卖合同 | ✓ | ✓ |
+| 借款合同 | ✓ | ✓ |
+| 服务合同 | ✓ | ✓ |
+| 技术合同 | ✓ | ✓ |
+| 投资合同 | ✓ | ✓ |
 
 ---
 
-## ⚙️ 核心配置
+## 配置说明
 
 `backend/src/main/resources/application.yml`
 
@@ -198,7 +254,7 @@ spring:
     password: 123456
   jpa:
     hibernate:
-      ddl-auto: update    # 自动创建/更新数据表
+      ddl-auto: update
 
 siliconflow:
   api:
@@ -218,12 +274,12 @@ template:
 
 ---
 
-## ❓ 常见问题
+## 常见问题
 
 <details>
 <summary><strong>需要申请 API Key 吗？</strong></summary>
 
-是的，需要在 SiliconFlow（https://www.siliconflow.cn）申请 API Key 才能使用 AI 功能。
+是的，需要在 [SiliconFlow](https://www.siliconflow.cn) 申请 API Key 后才能使用 AI 功能。
 </details>
 
 <details>
@@ -246,7 +302,7 @@ template:
 
 ---
 
-## 📄 License
+## License
 
 本项目采用 [MIT License](LICENSE) 开源。
 
